@@ -1,4 +1,4 @@
-from sqlmodel import SQLModel, Field
+from sqlmodel import SQLModel, Field, select
 from connection import create_tables
 
 class Users2(SQLModel, table= True):

@@ -27,3 +27,7 @@ def create_tables() -> None:
     Call this ONCE at startup or from a one-off script.
     """
     SQLModel.metadata.create_all(engine)
+
+
+def get_session():
+    return Session(engine)
